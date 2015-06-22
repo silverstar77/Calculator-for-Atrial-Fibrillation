@@ -1,7 +1,7 @@
 #Calculator for Atrial Fibrillation Stroke Risk
 This is a course project for the Data Science Specilization by John Hopkins University via Coursera
 
-I used this calculator (http://www.mdcalc.com/cha2ds2-vasc-score-for-atrial-fibrillation-stroke-risk/#from-the-creator) and rebuild it using R and Shiny. The calculator helps determine the long-term stroke risk stratification for atrial fibrillation patients using the CHA2DS2-VASc Score.
+I used this calculator (http://www.mdcalc.com/cha2ds2-vasc-score-for-atrial-fibrillation-stroke-risk/#from-the-creator) and rebuilt it using R and Shiny. The calculator helps determine the long-term stroke risk stratification for atrial fibrillation patients using the CHA2DS2-VASc Score.
 
 As per the creator of the Atrial Fibrillation Stroke Risk calculator, Dr. Gregory Lip: "CHA2DS2-VASc score (Birmingham 2009) was developed after identifying additional stroke risk factors in patients with atrial fibrillation. The CHA2DS2-VASc score is one of several risk stratification schema that can help determine the 1 year risk of a TE event in a non-anticoagulated patient with non-valvular AF."
 
