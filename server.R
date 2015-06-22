@@ -47,9 +47,21 @@ function(input, output) {
       ylab("Annual Stroke Rate (% of patients)") +
       ggtitle("Annual Stroke Risk") + coord_fixed(ratio = 1/2) +
       annotate("text", x = c(1:10), y =c(1,1.5,3,4,6,8,10.5,12,11.5,13) , label = labels)
-    
     print(p)
+                              })
+  
+  output$documentation <-renderText({ 
+"The CHA2DS2-VASc score is calculated based on the inputs: patient age group, gender and medical history. It ranges from 0 to 9. 
+
+The associated annual risk of having a stroke is also displayed (calculated as a percentage of patients per year). The score and the risk values update automatically.
+
+The chart additionally shows the risk distribution across all CHA2DS2-VASc scores. The risk group based on the current input selection is highlighted.
+
+CHA2DS2-VASc score (Birmingham 2009) was developed by Dr. Gregory Lip after identifying additional stroke risk factors in patients with atrial fibrillation.The older CHADS2 score was designed to identify 'high risk' patients for warfarin, but many common (and important) stroke risk factors in AF are not included within the CHADS2 Score. 
+
+CHA2DS2-VASc was developed to be more inclusive of common stroke risk factors/modifiers.Numerous validation studies have shown that CHA2DS2-VASc is as good as - or possibly better - than CHADS2 at predicting high risk patients, but CHA2DS2-VASc is certainly best at predicting the 'low risk' patients.
     
-                              }, height=700)                                     
+"
+  })
     
 }

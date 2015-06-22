@@ -19,11 +19,13 @@ shinyUI(fluidPage(
   ),
   
   mainPanel(
-    h3('Results'),
-    h4('Your total score is:'),
-    verbatimTextOutput('inputScore'),
-    h5('Your yearly stroke risk (in %) is:'),
-    verbatimTextOutput('inputRisk'),
-    plotOutput('plot')
-  )
+    tabsetPanel(
+      tabPanel("Results",
+                h3("Patient's total score is:"),
+                verbatimTextOutput('inputScore'),
+                h3("Patient's yearly stroke risk (in %) is:"),
+                verbatimTextOutput('inputRisk'),
+                plotOutput('plot')),
+      tabPanel("Documentation", verbatimTextOutput("documentation"))
+               ))
 ))
